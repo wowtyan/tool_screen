@@ -26,7 +26,7 @@ public class MyThread extends Thread {
             BufferedImage image;
             DateFormat format = new SimpleDateFormat("yyyyMMdd_HHmmss");
 
-            for (int i = 0; i < 50; i++) {
+            for ( ; ; ) {
                 image = robot.createScreenCapture(rect);
                 System.out.println("Done.");
                 ByteArrayOutputStream outS = new ByteArrayOutputStream();
